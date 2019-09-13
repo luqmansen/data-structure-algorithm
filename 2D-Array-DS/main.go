@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -12,7 +13,6 @@ import (
 // Complete the hourglassSum function below.
 func hourglassSum(a [][]int32) int32 {
 	var sum []int32
-	//var up1 int
 	for i, b := range a {
 		if i > 0 && i < len(a)-1 {
 			for j, _ := range b {
@@ -21,33 +21,29 @@ func hourglassSum(a [][]int32) int32 {
 					mid := a[i][j]
 					down := a[i+1][j-1] + a[i+1][j] + a[i+1][j+1]
 					sum = append(sum, up+mid+down)
-					//fmt.Println(sum)
+					fmt.Println(sum)
 				}
 			}
-			//fmt.Print("\n")
 		}
+		fmt.Println("\n")
 	}
-
-	var ret int32
-	for _, k := range sum {
-		if k > ret {
-			ret = k
-		}
-	}
+	sort.Slice(sum, func(i,j int)bool {return  sum[i] < sum[j]})
+	ret := sum[len(sum)-1]
+	fmt.Println(sum)
 	return ret
 }
 
 func main() {
 
 	//arr := [][]int32{
-	//	{-9, -9, -9, 1, 1, 1},
-	//	{0, -9, 0, 4, 3, 2},
-	//	{-9, -9, -9, 1, 2, 3},
-	//	{0, 0, 8, 6, 6, 0},
-	//	{0, 0, 0, -2, 0, 0},
-	//	{0, 0, 1, 2, 4, 0},
+	//	{-1, -1, 0, -9, -2, -2},
+	//	{-2, -1, -6, -8, -2, -5},
+	//	{-1, -1, -1, -2, -3, -4},
+	//	{-1, -9, -2, -4, -4, -5},
+	//	{-7, -3, -3, -2, -9, -9},
+	//	{-1, -3, -1, -2, -4, -5},
 	//}
-
+	//
 	//ret := hourglassSum(arr)
 	//fmt.Print(ret)
 
