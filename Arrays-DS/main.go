@@ -1,20 +1,20 @@
 package main
 
 import (
-"bufio"
-"fmt"
-"io"
+	"bufio"
+	"fmt"
+	"io"
 	"log"
 	"os"
-"strconv"
-"strings"
+	"strconv"
+	"strings"
 )
 
 // Complete the reverseArray function below.
 func reverseArray(a []int32) []int32 {
 
 	var ret []int32
-	for i:= len(a)-1; i >=0; i--{
+	for i := len(a) - 1; i >= 0; i-- {
 		ret = append(ret, a[i])
 	}
 	return ret
@@ -22,14 +22,14 @@ func reverseArray(a []int32) []int32 {
 }
 
 func main() {
-	reader := bufio.NewReaderSize(os.Stdin, 1024 * 1024)
+	reader := bufio.NewReaderSize(os.Stdin, 1024*1024)
 
 	stdout, err := os.Create("output")
 	checkError(err)
 
 	defer stdout.Close()
 
-	writer := bufio.NewWriterSize(stdout, 1024 * 1024)
+	writer := bufio.NewWriterSize(stdout, 1024*1024)
 
 	arrCount, err := strconv.ParseInt(readLine(reader), 10, 64)
 	checkError(err)
@@ -54,7 +54,7 @@ func main() {
 			log.Println(err)
 		}
 
-		if i != len(res) - 1 {
+		if i != len(res)-1 {
 			_, err := fmt.Fprintf(writer, " ")
 			if err != nil {
 				log.Println(err)

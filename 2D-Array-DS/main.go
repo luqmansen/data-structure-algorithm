@@ -15,7 +15,7 @@ func hourglassSum(a [][]int32) int32 {
 	var sum []int32
 	for i, b := range a {
 		if i > 0 && i < len(a)-1 {
-			for j, _ := range b {
+			for j := range b {
 				if j > 0 && j < len(b)-1 {
 					up := a[i-1][j-1] + a[i-1][j] + a[i-1][j+1]
 					mid := a[i][j]
@@ -27,7 +27,7 @@ func hourglassSum(a [][]int32) int32 {
 		}
 		fmt.Println("\n")
 	}
-	sort.Slice(sum, func(i,j int)bool {return  sum[i] < sum[j]})
+	sort.Slice(sum, func(i, j int) bool { return sum[i] < sum[j] })
 	ret := sum[len(sum)-1]
 	fmt.Println(sum)
 	return ret
@@ -47,14 +47,14 @@ func main() {
 	//ret := hourglassSum(arr)
 	//fmt.Print(ret)
 
-	reader := bufio.NewReaderSize(os.Stdin, 1024 * 1024)
+	reader := bufio.NewReaderSize(os.Stdin, 1024*1024)
 
 	stdout, err := os.Create("output")
 	checkError(err)
 
 	defer stdout.Close()
 
-	writer := bufio.NewWriterSize(stdout, 1024 * 1024)
+	writer := bufio.NewWriterSize(stdout, 1024*1024)
 
 	var arr [][]int32
 	for i := 0; i < 6; i++ {

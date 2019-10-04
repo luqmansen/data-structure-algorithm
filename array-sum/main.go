@@ -14,7 +14,7 @@ import (
  */
 func simpleArraySum(ar []int32) int32 {
 	var sum int32
-	for _, val := range ar{
+	for _, val := range ar {
 		sum += val
 	}
 	return sum
@@ -22,14 +22,14 @@ func simpleArraySum(ar []int32) int32 {
 }
 
 func main() {
-	reader := bufio.NewReaderSize(os.Stdin, 1024 * 1024)
+	reader := bufio.NewReaderSize(os.Stdin, 1024*1024)
 
 	stdout, err := os.Create("output")
 	checkError(err)
 
 	defer stdout.Close()
 
-	writer := bufio.NewWriterSize(stdout, 1024 * 1024)
+	writer := bufio.NewWriterSize(stdout, 1024*1024)
 
 	arCount, err := strconv.ParseInt(readLine(reader), 10, 64)
 	checkError(err)
