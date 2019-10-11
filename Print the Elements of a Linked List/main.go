@@ -20,7 +20,7 @@ type SinglyLinkedList struct {
 }
 
 func (singlyLinkedList *SinglyLinkedList) insertNodeIntoSinglyLinkedList(nodeData int32) {
-	node := &SinglyLinkedListNode {
+	node := &SinglyLinkedListNode{
 		next: nil,
 		data: nodeData,
 	}
@@ -47,16 +47,16 @@ func (singlyLinkedList *SinglyLinkedList) insertNodeIntoSinglyLinkedList(nodeDat
  */
 func printLinkedList(head *SinglyLinkedListNode) {
 
-		for head.next != nil{
-			fmt.Println(head.data)
-			head = head.next
-		}
+	for head.next != nil {
 		fmt.Println(head.data)
+		head = head.next
+	}
+	fmt.Println(head.data)
 
 }
 
 func main() {
-	reader := bufio.NewReaderSize(os.Stdin, 1024 * 1024)
+	reader := bufio.NewReaderSize(os.Stdin, 1024*1024)
 
 	llistCount, err := strconv.ParseInt(readLine(reader), 10, 64)
 	checkError(err)

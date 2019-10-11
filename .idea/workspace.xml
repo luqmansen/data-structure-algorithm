@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f54c65bc-4e7d-4cc6-82a6-96c110dbe1ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sparse-array/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2D-Array-DS/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/2D-Array-DS/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays-DS/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays-DS/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays-DS/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays-DS/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dynamic-array/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Dynamic-array/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dynamic-array/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Dynamic-array/test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array-sum/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/array-sum/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solve-me-first/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/solve-me-first/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output-number/PseudoCode.md" beforeDir="false" afterPath="$PROJECT_DIR$/Output-number/PseudoCode.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output-number/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Output-number/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Print the Elements of a Linked List/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Print the Elements of a Linked List/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sparse-array/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Sparse-array/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,12 +69,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (2)">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
+    <configuration name="go build github.com/luqmansen/hackerrank/Output-number" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="hackerrank" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/Output-number/main.go" />
+      <package value="github.com/luqmansen/hackerrank/Output-number" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="hackerrank" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/Left-rotation/main.go" />
+      <filePath value="$PROJECT_DIR$/WalkingLamp/main.go" />
       <package value="github.com/luqmansen/hackerrank" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -92,30 +97,31 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="hackerrank" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/2D-Array-DS/main.go" />
+      <filePath value="$PROJECT_DIR$/Print the Elements of a Linked List/main.go" />
       <package value="github.com/luqmansen/hackerrank" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="hackerrank" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/Dynamic-array/test.go" />
+      <filePath value="$PROJECT_DIR$/Counting-valleys/main.go" />
       <package value="github.com/luqmansen/hackerrank" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go (2)" />
-        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build main.go (1)" />
-        <item itemvalue="Go Build.go build test.go" />
+        <item itemvalue="Go Build.go build github.com/luqmansen/hackerrank/Output-number" />
+        <item itemvalue="Go Build.go build main.go (4)" />
+        <item itemvalue="Go Build.go build main.go (3)" />
+        <item itemvalue="Go Build.go build main.go (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -134,6 +140,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Counting-valleys/main.go</url>
+          <line>26</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="DlvErrorBreakpoint" />
       </default-breakpoints>
