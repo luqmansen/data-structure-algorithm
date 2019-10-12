@@ -25,8 +25,8 @@ func WalkingLamp(n int, lamp []bool) int {
 
 func main() {
 
-	lamp := make([]bool, 10)
-	trip := 3
+	lamp := make([]bool, 100)
+	trip := 100
 
 	fmt.Println(WalkingLamp(trip, lamp))
 
