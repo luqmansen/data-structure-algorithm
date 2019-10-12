@@ -4,8 +4,8 @@ import "fmt"
 
 func WalkingLamp(n int, lamp []bool) int {
 	var count int
-	init :=1
-	for i:= 0; i < n; i++{
+	init := 1
+	for i := 0; i < n; i++ {
 		for idx, _ := range lamp {
 			if (idx+1)%init == 0 {
 				lamp[idx] = !lamp[idx]
@@ -15,15 +15,19 @@ func WalkingLamp(n int, lamp []bool) int {
 	}
 
 	fmt.Println(lamp)
+	for _, val := range lamp{
+		if val == true{
+			count++
+		}
+	}
 	return count
 }
 
-func main(){
+func main() {
 
 	lamp := make([]bool, 10)
 	trip := 3
 
-	WalkingLamp(trip, lamp)
-
+	fmt.Println(WalkingLamp(trip, lamp))
 
 }
