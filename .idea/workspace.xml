@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f54c65bc-4e7d-4cc6-82a6-96c110dbe1ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Electronics-shop/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Compare-the-triplets/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output-number/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Output-number/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sock-Merchant/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Sock-Merchant/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
