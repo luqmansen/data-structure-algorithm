@@ -1,9 +1,9 @@
 package main
 
 import (
-"bufio"
-"fmt"
-"io"
+	"bufio"
+	"fmt"
+	"io"
 	"os"
 	"strconv"
 	"strings"
@@ -28,7 +28,7 @@ func matchSock(n int32, ar []int32) int32 {
 			if value%2 == 1 {
 				pair += int32((value - 1) / 2)
 			} else {
-				pair += int32(value/2)
+				pair += int32(value / 2)
 			}
 		} else {
 			continue
@@ -45,14 +45,14 @@ func main() {
 	//sock2 := []int32{1, 1, 3, 1, 2, 1, 3, 3, 3, 3}
 	//fmt.Println(matchSock(6, sock2))
 
-	reader := bufio.NewReaderSize(os.Stdin, 1024 * 1024)
+	reader := bufio.NewReaderSize(os.Stdin, 1024*1024)
 
 	stdout, err := os.Create("OUTPUT_PATH")
 	checkError(err)
 
 	defer stdout.Close()
 
-	writer := bufio.NewWriterSize(stdout, 1024 * 1024)
+	writer := bufio.NewWriterSize(stdout, 1024*1024)
 
 	nTemp, err := strconv.ParseInt(readLine(reader), 10, 64)
 	checkError(err)
@@ -90,4 +90,3 @@ func checkError(err error) {
 		panic(err)
 	}
 }
-

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f54c65bc-4e7d-4cc6-82a6-96c110dbe1ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Electronics-shop/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output-number/PseudoCode.md" beforeDir="false" afterPath="$PROJECT_DIR$/Output-number/PseudoCode.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output-number/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Output-number/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Print the Elements of a Linked List/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Print the Elements of a Linked List/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sparse-array/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Sparse-array/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sock-Merchant/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Sock-Merchant/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +48,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../maze_go" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -69,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (1)">
+  <component name="RunManager" selected="Go Build.go build github.com/luqmansen/hackerrank/Output-number">
     <configuration name="go build github.com/luqmansen/hackerrank/Output-number" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="hackerrank" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -117,8 +116,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build github.com/luqmansen/hackerrank/Output-number" />
+        <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go (4)" />
         <item itemvalue="Go Build.go build main.go (3)" />
         <item itemvalue="Go Build.go build main.go (2)" />
