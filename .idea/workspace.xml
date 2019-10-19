@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f54c65bc-4e7d-4cc6-82a6-96c110dbe1ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/hackerrank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hackerrank.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Array Manipulation/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Array Manipulation/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Diagonal-difference/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Diagonal-difference/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Birthday Candle/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Birthday Candle/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="Python Script" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
@@ -50,7 +48,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="/media/binatangkesusahan/Data/Project/WolframBot" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -70,21 +68,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="hackerrank" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/WalkingLamp/main.go" />
-      <package value="github.com/luqmansen/hackerrank" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="hackerrank" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/Array Manipulation/main.go" />
+      <package value="github.com/luqmansen/hackerrank" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="hackerrank" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/plus-minus/main.go" />
       <package value="github.com/luqmansen/hackerrank" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -102,7 +100,7 @@
       <module name="hackerrank" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/Diagonal-difference/main.go" />
+      <filePath value="$PROJECT_DIR$/Time conversion/main.go" />
       <package value="github.com/luqmansen/hackerrank" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -130,7 +128,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build main.go (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -163,10 +162,15 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/InsertNodeAtTail/main.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="17" />
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/plus-minus/main.go</url>
+          <line>15</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Time conversion/main.go</url>
+          <line>32</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
