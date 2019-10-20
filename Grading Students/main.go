@@ -19,12 +19,12 @@ import (
 func gradingStudents(grades []int32) []int32 {
 
 	for i, val := range grades{
-		y := val % 5
-		x := val % 10
+		y := val % 5  // Not really necessary to declare this here,
+		x := val % 10 // but it's easier to read the code like this
 		if val >= 38 &&  10 - x < 3{
-			grades[i] = val + 10 - (val % 10)
+			grades[i] = val + 10 - x
 		} else 	if val >= 38 && 5 - y < 3 {
-			grades[i] = val + 5 - (val % 5)
+			grades[i] = val + 5 - y
 		}
 	}
 	return grades
