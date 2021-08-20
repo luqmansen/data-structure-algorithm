@@ -18,6 +18,7 @@ import (
  *  2. STRING b
  */
 
+ //https://www.hackerrank.com/challenges/ctci-making-anagrams/
 func makeAnagram(a string, b string) int32 {
     stringA := strings.Split(a, "")
     stringB := strings.Split(b, "")

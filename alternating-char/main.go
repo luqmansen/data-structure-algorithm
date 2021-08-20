@@ -16,6 +16,7 @@ import (
  * The function accepts STRING s as parameter.
  */
 
+ // https://www.hackerrank.com/challenges/alternating-characters/
 func alternatingCharacters(s string) int32 {
     stringSplit := strings.Split(s, "")
     
