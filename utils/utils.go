@@ -25,7 +25,7 @@ func ListToSet(input []string) []string {
 	return output
 }
 
-func isAnagram(a, b string) bool {
+func IsAnagram(a, b string) bool {
 
 	m := strings.Split(a, "")
 	n := strings.Split(b, "")
@@ -37,4 +37,37 @@ func isAnagram(a, b string) bool {
 		return true
 	}
 	return false
+}
+
+func SumTwoArray(arrA, arrB []int) (sumA, sumB int) {
+
+	for idx, _ := range arrB {
+		sumB += arrB[idx]
+		if idx < len(arrA) {
+			sumA += arrA[idx]
+		}
+	}
+	return sumA, sumB
+}
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
+func (receiver ListNode) String() string {
+	return string(rune(receiver.Val))
+}
+
+func CreateLinkedList(arr []int) *ListNode {
+	dummy := &ListNode{}
+	curr := dummy
+
+	for _, val := range arr {
+		newNode := &ListNode{Val: val}
+		curr.Next = newNode
+		curr = curr.Next
+	}
+
+	return dummy.Next
 }
