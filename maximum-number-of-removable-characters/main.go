@@ -16,6 +16,7 @@ func maximumRemovals(s string, p string, removable []int) int {
 	left := 0
 	right := len(removable) - 1
 
+	// binary search
 	for left <= right {
 
 		mid := left + ((right - left) / 2)
