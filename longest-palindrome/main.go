@@ -10,7 +10,7 @@ import (
 func longestPalindrome(s string) string {
 	split := strings.Split(s, "")
 
-	if len(utils.ListToSet(split)) == 1 {
+	if len(utils.ListToSetString(split)) == 1 {
 		return strings.Join(split, "")
 	}
 

@@ -12,9 +12,22 @@ func Max(x, y int) int {
 	return x
 }
 
-func ListToSet(input []string) []string {
+func ListToSetString(input []string) []string {
 	sets := make(map[string]bool, 0)
 	output := make([]string, 0)
+
+	for _, val := range input {
+		if _, found := sets[val]; !found {
+			sets[val] = true
+			output = append(output, val)
+		}
+	}
+	return output
+}
+
+func ListToSetInt(input []int) []int {
+	sets := make(map[int]bool, 0)
+	output := make([]int, 0)
 
 	for _, val := range input {
 		if _, found := sets[val]; !found {
