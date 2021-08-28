@@ -52,6 +52,8 @@ import "fmt"
 
 func removeElement(nums []int, val int) int {
 	n := 0
+	// 0, 1, 2, 2, 3, 0, 4, 2
+	// del 2
 	for _, elem := range nums {
 		if elem != val {
 			nums[n] = elem
@@ -59,6 +61,19 @@ func removeElement(nums []int, val int) int {
 		}
 	}
 	return n
+}
+
+func removeElement2(nums []int, val int) int {
+
+	res := make([]int, 0)
+	for _, num := range nums {
+		if num != val {
+			res = append(res, num)
+		}
+	}
+	copy(nums, res)
+	return len(res)
+
 }
 
 func main() {
@@ -88,8 +103,10 @@ func main() {
 	//fmt.Println(res)
 
 	x := []int{0, 1, 2, 2, 3, 0, 4, 2}
-	res := removeElement(x, 2)
+	res := removeElement2(x, 2)
 	fmt.Println(x)
+	//k := []int{0, 1, 2, 2, 3, 0, 4, 2}
+	//res = removeElement(k, 2)
 	fmt.Println(res)
 
 }

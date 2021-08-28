@@ -7,10 +7,10 @@ import (
 	"strings"
 )
 
+// logN * N^2
 func maximumRemovals(s string, p string, removable []int) int {
 
 	var maxRemoved int
-	seqString := strings.Split(s, "")
 	subSeqSplit := strings.Split(p, "")
 
 	left := 0
@@ -22,8 +22,9 @@ func maximumRemovals(s string, p string, removable []int) int {
 		mid := left + ((right - left) / 2)
 
 		idxToRemove := removable[:mid+1]
-		newString := removeItemInArr(seqString, idxToRemove)
-		if IsSubSequence(subSeqSplit, newString) == true {
+		seqString := strings.Split(s, "")
+		newString := removeItemInArr2(seqString, idxToRemove) // O(n)
+		if IsSubSequence(subSeqSplit, newString) == true {    // O(n)
 			left = mid + 1
 			maxRemoved = utils.Max(maxRemoved, len(idxToRemove))
 		} else {
@@ -34,8 +35,7 @@ func maximumRemovals(s string, p string, removable []int) int {
 	return maxRemoved
 }
 
-// time complexity O(n)
-// space complexity N
+// original solution, too complex lol
 func removeItemInArr(arr []string, idxs []int) []string {
 	// arr = a b c d e f g h i
 	//       0 1 2 3 4 5 6 7 8
@@ -64,6 +64,17 @@ func removeItemInArr(arr []string, idxs []int) []string {
 	}
 
 	return result
+}
+
+// from discussion
+func removeItemInArr2(newArr []string, idxs []int) []string {
+
+	for _, idxToRemove := range idxs {
+		newArr[idxToRemove] = ""
+	}
+
+	s := strings.Join(newArr, "")
+	return strings.Split(s, "")
 }
 
 // time complexity O(n)
