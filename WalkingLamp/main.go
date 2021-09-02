@@ -14,9 +14,8 @@ func WalkingLamp(n int, lamp []bool) int {
 		init++
 	}
 
-	fmt.Println(lamp)
-	for _, val := range lamp{
-		if val == true{
+	for _, val := range lamp {
+		if val == true {
 			count++
 		}
 	}
