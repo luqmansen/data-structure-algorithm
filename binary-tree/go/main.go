@@ -131,14 +131,11 @@ func levelOrder(root *TreeNode) (res [][]int) {
 	return res
 }
 func main() {
-	tree := &TreeNode{}
-	tree.Val = 1
-	//tree.Left = &TreeNode{Val: 2, Left: &TreeNode{Val: 4},Right: &TreeNode{Val: 5}}
-	tree.Left = &TreeNode{Val: 2, Left: &TreeNode{Val: 4, Left: &TreeNode{Val: 6}}}
-	//tree.Right = &TreeNode{Val: 3, Left: &TreeNode{Val: 6}, Right: &TreeNode{Val: 7}}
-	tree.Right = &TreeNode{Val: 3, Right: &TreeNode{Val: 5, Right: &TreeNode{Val: 7}}}
+	//tree := &TreeNode{Val: 1, Right: &TreeNode{Val: 2, Left: &TreeNode{Val: 3}}}
+	tree := &TreeNode{Val: 1, Left: &TreeNode{Val: 2}, Right: &TreeNode{Val: 3}}
 
 	//fmt.Println(preorderTraversal(tree))
+	fmt.Println(inOrderTraversalIter(tree))
 	//fmt.Println(inorderTraversal(tree))
-	fmt.Println(levelOrder(tree))
+	//fmt.Println(levelOrder(tree))
 }
