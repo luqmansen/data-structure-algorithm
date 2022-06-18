@@ -1,5 +1,8 @@
 class Solution:
-    def uniquePaths(self, m: int, n: int, memo={}) -> int:
+    def uniquePathsRecursion(self, m: int, n: int, memo={}) -> int:
+        """
+        recursion solution
+        """
         key1 = f"{m}|{n}"
         if key1 in memo:
             return memo[key1]
@@ -17,4 +20,23 @@ class Solution:
         memo[key2] = res
         
         return res
+    def uniquePaths(self, m: int, n: int, memo={}) -> int:
+        """
+        tabulation solution
+        """
+        tab = [[0 for _ in range(m + 1)] for _ in range(n + 1)]
+
+        tab[1][1] = 1
+
+        for col in range(n + 1):
+            for row in range(m + 1):
+                if row + 1 <= m:
+                    tab[col][row + 1] += tab[col][row]
+                if col + 1 <= n:
+                    tab[col + 1][row] += tab[col][row]
+
+        return tab[n][m]
+
+
+        return tab[m][n]
         
