@@ -7,10 +7,6 @@ class Solution:
 
         if res is None:
             return []
-        
-        for i in res:
-            if len("".join(i.split(" "))) != len(s):
-                return []
 
         return res
 
