@@ -15,7 +15,9 @@ def search(arr: list, target: int) -> int:
 
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool: 
-            
+        # Time complexity = O(log n)
+        # space complexity = O(1)
+        
         left, right = 0, len(matrix) - 1
         
         while left <= right:
@@ -43,6 +45,18 @@ class Solution:
                     left = mid + 1
         
         return False
+    
+    def searchMatrix2(self, matrix: List[List[int]], target: int) -> bool:
+        # Time complexity = O(log n)
+        # space complexity = O(n)
+        
+        arr = []
+        for i in matrix:
+            arr = [*arr , *i]
+        
+        res = search(arr, target)
+        
+        return True if res != -1 else False
                 
     
 
