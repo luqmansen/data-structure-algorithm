@@ -34,10 +34,7 @@ class Solution:
                 last = matrix[mid]
                 lastVal = last[-1]
                 
-                if target == lastVal:
-                    return True
-                
-                elif target < lastVal:
+                if target <= lastVal:
                     res = search(last, target)
                     return True if res != -1 else False
                 
