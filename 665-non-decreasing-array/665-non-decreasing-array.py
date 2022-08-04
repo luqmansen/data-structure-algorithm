@@ -5,7 +5,7 @@ class Solution:
         
         change = 0
         maxB = nums[0]
-        before = nums[:]
+        # before = nums[:]
         
         for i,n in enumerate(nums):
             if i == len(nums) - 1:
@@ -23,7 +23,7 @@ class Solution:
                         
             maxB = max(maxB, n)
             
-        print(before, nums, change)
+        # print(before, nums, change)
         return True if change <= 1 else False
             
         
