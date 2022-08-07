@@ -57,14 +57,14 @@ class Solution:
                         f =i
                         intervals[i][1] = max(b, m)
                     
-        print(s,f, mid)
-        print(intervals)
+        # print(s,f, mid)
+        # print(intervals)
         if mid:
             new = [*intervals[:s], ni, *intervals[s:]]
             
         elif s is not None and f is not None:
             merged = [intervals[s][0],intervals[f][1]]
-            print(merged)
+            # print(merged)
             new = [*intervals[:s], merged, *intervals[f+1:]]
                 
         else:
