@@ -6,11 +6,13 @@ class Solution:
         # time complexity = n * m log m
         
         for w in strs:
+#             this solution is slightly longer even in theory it has better 
+#.            time complexity n * m -> m is average length of the word            
+#             prolly because of need to realocate below var multiple times
+
 #             count = [0] * 26
-            
 #             for c in w:
 #                 count[ord(c) - ord("a")] += 1
-            
 #             s = tuple(count)
 
             s = sorted(w)
