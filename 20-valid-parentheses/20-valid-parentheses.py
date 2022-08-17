@@ -1,23 +1,34 @@
 # {[][]}
 # {{}()}([]{})
+# {[}][]
 
 # stack [ ( ] ) ( ) ( )
 # [ ( ] ) ( ) ( )
 class Solution:
     def isValid(self, s: str) -> bool:
-        stack = []
-        close = {"}":"{", ")":"(", "]":"["}
         
-        for i in s:
-            if i in close:
-                if stack and stack[-1] == close[i]:
-                    stack.pop()
-                else:
-                    return False
+        if len(s) % 2 != 0:
+            return False
+        
+        close = {
+            "}" : "{",
+            ")" : "(",
+            "]" : "["
+        }
+        
+        st = []
+        
+        for p in s:
+            # print(p, st)
+            if len(st) == 0:
+                st.append(p)
+                continue
             else:
-                stack.append(i)
-                       
-        return len(stack) == 0
-                
+                if p in close and st[-1] == close[p]:
+                    st.pop()
+                else:
+                    st.append(p)
+                    
+        return len(st) == 0
                        
                 
