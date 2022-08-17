@@ -6,12 +6,15 @@ class Solution:
         # time complexity = n * m log m
         
         for w in strs:
-            count = [0] * 26
+#             count = [0] * 26
             
-            for c in w:
-                count[ord(c) - ord("a")] += 1
+#             for c in w:
+#                 count[ord(c) - ord("a")] += 1
             
-            s = tuple(count)
+#             s = tuple(count)
+
+            s = sorted(w)
+            s = "".join(s)
             
             if s in an:
                 an[s].append(w)
