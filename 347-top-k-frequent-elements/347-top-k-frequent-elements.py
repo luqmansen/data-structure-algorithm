@@ -28,5 +28,5 @@ class Solution:
         for i in reversed(res):
             if i != 0:
                 kk = [*kk, *i]
-        
+                
         return kk[:k] 
