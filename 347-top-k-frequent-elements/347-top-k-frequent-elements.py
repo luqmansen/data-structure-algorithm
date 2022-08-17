@@ -7,7 +7,6 @@ class Solution:
         
         res = [[] for i in range(len(nums)+1)] 
         
-        
         for key, v in cnt.items():
             res[v].append(key)
         
@@ -15,6 +14,7 @@ class Solution:
         # res = sorted(res, reverse=True, key=lambda x: x[1])
         # return [i[0] for i in res][:k]
         
+        # O (n) solution
         kk = []
         for i in reversed(res):
             for n in i:
