@@ -3,8 +3,11 @@ class Solution:
         cnt = 0
         while n > 0:
             
-            n -= 2**int(math.log(n, 2))
-            cnt +=1
+            if n % 2 == 1:
+                cnt +=1
+                
+            n = n >> 1
+            
             # print(n, cnt)
         
         return cnt
