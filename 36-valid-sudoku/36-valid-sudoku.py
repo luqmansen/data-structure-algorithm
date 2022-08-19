@@ -23,7 +23,8 @@ class Solution:
                     items.add(i)
             idx +=1
             
-        # check box
+        
+        # converting each box into single array
         conv = [[] for i in range(9)]
         pos = 0
         for i in range(9):
@@ -45,7 +46,8 @@ class Solution:
                     break
 
                 rowX, rowY = rowY, rowY + 3
-            
+       
+    # checking duplicate in array box 
         for row in conv:
             items = set()
             for i in row:
