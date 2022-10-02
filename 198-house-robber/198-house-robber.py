@@ -3,37 +3,21 @@ from typing import List
 
 class Solution:
     def rob(self, nums: List[int]) -> int:
-
-        if len(nums) <= 2:
-            return max(nums)
         
-        seen = {}
-
-        def do(nums, idx, tot=0):
+        rob1, rob2 = 0, 0
+        # [rob1, rob2, n, n+1, ...]
+        # rob1, rob2 [ n, n+1, ...]
+        for n in nums:
+            temp = max(rob1 + n, rob2)
+            rob1 = rob2
+            rob2 = temp
             
-            if idx in seen:
-                return seen[idx]
-
-            if idx > len(nums) - 1 or idx < 0:
-                return 0
-
-            tot += nums[idx]
-
-            meks = []
-            for iv in range(2, len(nums)):
-                meks.append(do(nums, idx + iv))
-
-            tot += max(meks)
+        return rob2
             
-            seen[idx] = tot
+        
             
-            return tot
 
-        res = []
-        for i, _ in enumerate(nums):
-            res.append(do(nums, i))
-
-        return max(res)
+        
 
 
 if __name__ == '__main__':
