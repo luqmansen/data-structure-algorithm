@@ -4,15 +4,13 @@ class Solution:
         if amount == 0:
             return 0
         
-        result = []
+        result = math.inf
         memo = {}
         
         for c in coins:
-            amt = self.do(coins, memo, amount)
-            if amt > 0 and amt != math.inf:
-                result.append(amt)
+            result = min(result, self.do(coins, memo, amount))
             
-        return min(result) if len(result) > 0 else -1
+        return result if result != math.inf else -1
     
     
     def do(self, coins, memo, remainder):
