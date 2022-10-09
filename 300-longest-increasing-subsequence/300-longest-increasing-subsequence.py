@@ -1,5 +1,5 @@
 class Solution:
-    def lengthOfLIS(self, nums: List[int]) -> int:
+    def lengthOfLIS2(self, nums: List[int]) -> int:
         dp = [1 for _ in range(len(nums))]
 
         # 3 2 1 0
@@ -12,7 +12,7 @@ class Solution:
         return max(dp)
     
     
-    def lengthOfLIS2(self, nums: List[int]) -> int:
+    def lengthOfLIS(self, nums: List[int]) -> int:
                 
         def dfs(idx, memo):
             if idx in memo:
