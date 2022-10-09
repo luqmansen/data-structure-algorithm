@@ -1,5 +1,18 @@
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
+        dp = [1 for _ in range(len(nums))]
+
+        # 3 2 1 0
+        # [   2 1]
+        for i in range(len(nums) - 1, -1, -1):
+            for j in range(i+1, len(nums)):  #
+                if nums[j] > nums[i]:
+                    dp[i] = max(dp[i], 1 + dp[j])
+
+        return max(dp)
+    
+    
+    def lengthOfLIS2(self, nums: List[int]) -> int:
                 
         def dfs(idx, memo):
             if idx in memo:
@@ -20,7 +33,7 @@ class Solution:
         
         for i, _ in enumerate(nums):
             m = max(m, 1 + dfs(i, memo))
-            
+        
         return m
             
         
