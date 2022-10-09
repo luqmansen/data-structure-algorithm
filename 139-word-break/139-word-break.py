@@ -1,22 +1,25 @@
 class Solution:
-    def wordBreak(self, s: str, wordDict: List[str], memo=None) -> bool:
-        if memo is None:
-            memo = {}
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         
-        if s in memo:
-            return memo[s]
+        def find(s, memo):
+            if s in memo:
+                return memo[s]
             
-        if s == "":
-            return True
-        
-        result = False
-        for word in wordDict:
-            # leetcode
-            # leet
-            # s - word
-            if word == s[:len(word)]:
-                result = result or self.wordBreak(s[len(word):], wordDict, memo)
-        
-        memo[s] = result
-        return result
+            if s == "":
+                return True
             
+            for word in wordDict:
+                prefix = s[0:len(word)]
+                
+                if word == prefix:
+                    to_find = s[len(word):] 
+                    if find(to_find, memo):
+                        memo[to_find] = True
+                        return True
+            
+            memo[s] = False
+            return False
+        
+        
+        memo = {}
+        return find(s, memo)
