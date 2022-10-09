@@ -7,7 +7,7 @@ class Solution:
             
             maks = 0
             
-            for i in range(idx, len(nums)):
+            for i in range(idx + 1 , len(nums)):
                 if nums[i] > nums[idx] and i > idx:
                     maks = max (maks, 1 + dfs(i, memo))
             
