@@ -31,7 +31,7 @@ class Solution:
                     b = st.pop()
                     st.append(int(b / a))
                     
-        return st.pop()
+        return st[0]
 
                 
             
